@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/LlmProxy.Api/LlmProxy.Api.csproj" />
+    <Project Path="src/LlmProxy.Application/LlmProxy.Application.csproj" />
+    <Project Path="src/LlmProxy.Domain/LlmProxy.Domain.csproj" />
+    <Project Path="src/LlmProxy.Infrastructure/LlmProxy.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/LlmProxy.IntegrationTests/LlmProxy.IntegrationTests.csproj" />
+    <Project Path="tests/LlmProxy.UnitTests/LlmProxy.UnitTests.csproj" />
+  </Folder>
+</Solution>
