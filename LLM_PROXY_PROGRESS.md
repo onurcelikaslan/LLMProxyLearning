@@ -7,6 +7,7 @@
   - Acceptance criteria: (1) `docker compose up` → Redis + API ayakta, health endpoint 200; (2) katman referansları tek taraflı (Domain hiçbir şeye bağımlı değil); (3) git repo + ilk commit atılmış.
   ### Interview Angles
   - "Domain katmanı neden zayıf, Clean Architecture'ı yanlış mı uyguluyorsun?" — proxy'nin domain karmaşıklığı düşük, operasyonel karmaşıklığı (concurrency/resilience) yüksek; katmanlama testability ve infra değiştirilebilirliği için.
+  - "Docker build'in host makineden bağımsız olduğundan nasıl emin olursun?" — bulgu: `obj/`/`bin/` build context'e sızınca host'a özgü NuGet fallback path'leri container'a taşınıp restore'u kırdı; çözüm `.dockerignore` ile bunları hariç tutup restore'u her zaman container içinde yapmak.
 - [ ] 2. Multi-tenant request model — tenant resolution, routing
 
 ## Phase 2 — Traffic Control

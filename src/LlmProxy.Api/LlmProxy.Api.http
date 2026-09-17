@@ -1,6 +1,6 @@
 @LlmProxy.Api_HostAddress = http://localhost:5121
 
-GET {{LlmProxy.Api_HostAddress}}/weatherforecast/
+GET {{LlmProxy.Api_HostAddress}}/health/
 Accept: application/json
 
 ###
